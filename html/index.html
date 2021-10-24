@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+
+       var heur;
+       var minutes;
+       var secondes;
+           
+
+        heur = parseInt(window.prompt("entrer le premier nembre svp? "));
+
+        minutes = parseInt(window.prompt("entrer le deuxième nembre svp? "));
+
+        secondes = parseInt(window.prompt("entrer le troisième nembre svp? "));
+
+        if(heur > 24 || minutes > 59 || secondes > 59){
+            alert("Merci de rentrer une heur , minutes , secondes valable!!")
+
+        }
+
+     else  if(heur == 24 && minutes == 59 && secondes == 59){
+    var    actuelle_heur = heur - 23;
+    
+    var actuelle_minutes = minutes * 0;
+
+    var actuelle_secondes = secondes * 0;
+
+        document.write( actuelle_heur + "H" + actuelle_minutes +"M"+ actuelle_secondes + "S")
+       }
+       else if (heur <= 23  && minutes <= 59 && secondes <= 58){
+        actuelle_heur = heur;
+        actuelle_minutes = minutes;
+        actuelle_secondes = secondes + 1;
+        document.write( actuelle_heur + "H" + actuelle_minutes +"M"+ actuelle_secondes + "S")
+
+       } else if (heur <= 23  && minutes == 59 && secondes == 59){
+        actuelle_heur = heur +1 ;
+        actuelle_minutes = minutes * 0;
+        actuelle_secondes = secondes  * 0;
+        document.write( actuelle_heur + "H" + actuelle_minutes +"M"+ actuelle_secondes + "S")
+
+       }
+       else if (heur <=24  && minutes < 59 && secondes == 59){
+        actuelle_heur = heur;
+        actuelle_minutes = minutes + 1;
+        actuelle_secondes = secondes  * 0;
+        document.write( actuelle_heur + "H" + actuelle_minutes +"M"+ actuelle_secondes + "S")
+
+       } 
+       else{
+
+        document.write( actuelle_heur + "H" + actuelle_minutes +"M"+ (secondes +1) + "S")
+
+       }
+
+
+
+          
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
