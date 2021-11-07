@@ -1,0 +1,224 @@
+
+header>nav{
+
+background-color: gray;
+height: 5rem;
+}
+
+header>nav>ul{
+display: flex;
+flex-direction: row;
+}
+
+nav>ul>li{  
+list-style: none;
+margin-left: 3rem;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+ul>li>h1{
+    margin-left: 20rem;
+}
+
+.titre{
+   display: flex;
+   flex-direction: column;
+   color: blanchedalmond;
+   margin-left: 30%;
+ 
+
+}
+.photo{
+    margin-left: 4rem;
+    border-radius: 50%;
+    margin-top: 20%;
+    
+}
+
+.lang{
+    margin-left: 4rem;
+    margin-top: 20%;
+
+}
+
+.premiere{
+   
+    background-color: black;
+     height: 35rem;
+}
+
+
+.full_stuck, .front, .back, .contact,
+.conception, .portfolio_titre, .formation_titre{
+    text-align: center;
+   color: blanchedalmond;
+    background-color: rgb(42, 43, 44);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+}
+th>.far, th>.fab, th>.fas{
+
+    color: rgb(173, 122, 20);
+    font-size: 100px;
+    margin-right: 1rem;
+}
+
+table{
+border: solid 1px rgb(80, 55, 7);
+width: 100%;
+
+
+}
+th{
+    color: rgb(80, 55, 7);
+    width: 200px;
+    height: 200px;
+    font-size: 25px;
+   
+}
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bram, .trad, .october{
+    width: 300px;
+}
+
+.trait{
+    height: 500px;
+}
+
+.formation{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.afpa{
+
+    margin-top: 250px;
+}
+
+.hand_right{
+
+    float: right;
+}
+.hand_left{
+    margin-right: 400px;
+
+}
+.fas{
+
+    margin: 5px;
+}
+
+a:link{
+    text-decoration: none;
+    color: rgb(228, 202, 98);
+}
+
+li>a{
+
+    color: rgba(255, 255, 255, 0.027);
+}
+
+.titre_1{
+    color: rgb(43, 28, 247);
+    
+    
+}
+button{
+    border: none;
+    background: none;
+   color: rgb(245, 245, 240);
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+h4>i{
+    margin-left: 1rem;
+    color: rgb(73, 38, 38);
+}
+h5>a{
+    color: rgb(85, 3, 3);
+}
+footer{
+   
+    background-color: black;
+     height: 10rem;
+}
+footer>center>h5{
+   padding-top: 5rem;
+    color: blanchedalmond;
+}
+.back_up{
+    font-size: 50px;
+    float: right;
+ 
+}
+.back_up>a>.fas{
+
+    color: ivory;
+  
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    color: ivory;
+   
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #111010;
+    margin: auto;
+    padding: 20px;
+   
+    width: 80%;
+  
+
+  }
+  .modal_flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .raouf_photo{
+      width: 300px;
+      height: 300px;
+      margin: 10px;
+      border-radius: 20%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

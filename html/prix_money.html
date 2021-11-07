@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolut</title>
+</head>
+<body>
+    
+<script>
+
+var prix, somme = 0 , monnais,un=0, dix=0, cinq=0;
+
+
+do{
+
+    prix = parseInt(window.prompt("entrer le prix ?"));
+
+    somme += prix;
+
+}while(prix != 0)
+
+
+billet = parseInt(window.prompt("entrer le billet?"))
+    monnais =  document.write( billet - somme +"<br>")   
+
+
+    while(monnais >= 5)
+     {
+
+if(monnais >= 10){
+    dix = monnais/=10;
+    
+ 
+}else if(monnais >=5){
+monnais-=5;
+cinq++;
+
+}
+        
+     }
+
+
+    document.write( dix + " * 10 e <br>" )   
+    document.write( cinq + " * 5 e <br>" )   
+    document.write( un + " * 1 e" )   
+
+</script>
+
+</body>
+</html>
