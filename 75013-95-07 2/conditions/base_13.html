@@ -1,0 +1,43 @@
+<html>
+
+<head>
+
+<title>Base 3</title>
+
+
+<script>
+var heur;
+
+var minutes;
+
+
+   heur = parseInt(window.prompt("entrer heur  valide entre 1 et 24 svp"));
+   minutes = parseInt(window.prompt("entrer les minites entre 1 et 59 "));
+  
+     if  (  heur == 24 && minutes == 59)    {
+	          heur_acctuel = heur - 23;
+			   minutes_acctuel = minutes * 0;
+	     document.write("l'heur est " + heur_acctuel + "h" + minutes_acctuel);
+		} 
+		   else if (  heur < 24 && minutes == 59) {
+		     heur_acctuel = heur ;
+			   minutes_acctuel = minutes * 0;
+	     document.write("l'heur est " + heur_acctuel + "h" + minutes_acctuel);
+		   }
+		
+	
+  else {
+	  minutes_acctuel = minutes + 1;
+	   document.write("l'heur est " + heur + "h" + minutes_acctuel)
+	 }
+
+
+</script>
+</head>
+
+<body>
+<header>
+
+</header>
+
+<main>

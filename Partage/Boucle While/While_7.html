@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>While 7</title>
+		<script>
+            var nbr, taille=1;
+            nbr=parseInt(window.prompt("Entrez un nombre"));
+            if(nbr<0){
+                nbr*=-1;
+            }
+            while(nbr>=10){
+                nbr/=10;
+                taille++;
+            }
+            document.write("Votre nombre a "+taille+" chiffre");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

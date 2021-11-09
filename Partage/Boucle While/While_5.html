@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<title>While 5</title>
+		<script>
+            var nbr, max, min,total;
+            nbr=parseInt(window.prompt("Entrez un nombre"));
+            max=nbr;
+            min=nbr;
+            total=nbr;
+            while(nbr>0){
+                nbr=parseInt(window.prompt("Entrez un nombre"));
+                if(nbr>0){
+                    total+=nbr;
+                    if(nbr>max){
+                        max=nbr;
+                    }
+                    if(nbr<min){
+                        min=nbr;
+                    }
+                }
+            }
+            document.write("Votre plus gros nombre est : "+max+"<br>Votre plus petit nombre est : "+min+"<br>La somme de votre liste est : "+total)
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

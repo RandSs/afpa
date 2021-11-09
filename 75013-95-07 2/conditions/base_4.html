@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+<title>Base 3</title>
+
+
+<script>
+var prix;
+
+var quant;
+
+var tva;
+
+
+   prix = parseInt(window.prompt("entrer le prix"));
+   quant = parseInt(window.prompt("entrer la quantité"));
+   tva = parseInt(window.prompt("entrer la tva"));
+  
+  var calcule_tva = (prix * quant) * (tva/100);
+  
+   var ttc = (prix * quant) + calcule_tva;
+  
+  document.write("le prix ttc est : " + ttc );
+  
+  
+
+
+</script>
+</head>
+
+<body>
+<header>
+
+</header>
+
+<main>
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>

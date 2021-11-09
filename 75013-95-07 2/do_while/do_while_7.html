@@ -1,0 +1,24 @@
+<html>
+
+
+<script>
+var  length = 1 ;
+var nbr= parseInt(prompt("entrer un nbr?"));
+
+if(nbr<0){
+       nbr*=-1
+}
+
+do{
+if(nbr < 10 ){
+length =1 
+}else{
+
+nbr/=10;
+length++
+
+}
+} while(nbr >= 10)
+             document.write("Votre nombre a " +length+ " chiffre");
+</script>
+</html>

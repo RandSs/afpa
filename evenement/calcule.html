@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+tbody>tr>td{
+    border: solid 1px;
+}
+table{
+    width: 60%;
+}
+td>input{
+    width: 96%;
+    margin-left: 4px;
+}
+
+    </style>
+
+    <script>
+
+function number(a){
+    
+  document.getElementById("ecrant").value+= a;
+
+}
+
+    </script>
+    <title>calvier de télé</title>
+
+
+</head>
+<body>
+<center>
+    <input type="text" name="ecrant" id="ecrant">
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="2"><input type="button" onclick=number(1) value="1"></td>
+                <td colspan=""><input type="button" onclick=number(2) value="2"></td>
+                <td colspan=""><input type="button" onclick=number(3) value="3"></td>
+                </tr>
+
+                <tr>
+                <td colspan="2"><input type="button"  onclick=number(4) value="4"></td>
+                <td colspan=""><input type="button"  onclick=number(5) value="5"></td>
+                <td colspan=""><input type="button" onclick=number(6) value="6"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" onclick=number(7) value="7"></td>
+                <td colspan=""><input type="button" onclick=number(8) value="8"></td>
+                <td colspan=""><input type="button" onclick=number(9) value="9"></td>
+            </tr>
+                <td colspan="10"><input type="button" onclick=number(0) value="0"></td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+</body>
+</html>

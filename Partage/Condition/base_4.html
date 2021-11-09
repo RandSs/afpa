@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<title>base 4</title>
+		<script>
+            var article, TVA, TTC, nb;
+            article=parseInt(window.prompt("Prix de votre article HT"));
+            nb=parseInt(window.prompt("Votre nombre d'article"))
+            TVA=parseInt(window.prompt("Votre taux de TVA"));
+
+			if(article>0 && TVA>0 && nb>0){
+            TTC=article*TVA/100+article;
+            document.write("Votre article coute "+TTC+"€ TTC et vous en avez pour un total de "+TTC*nb+"€ pour "+nb+" articles");
+			}else{
+				document.write("Vous avez rentrez des valeurs qui ne sont pas possible");
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

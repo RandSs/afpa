@@ -1,0 +1,42 @@
+<html>
+
+<script>
+
+
+var nbr=0, max,min, i=0,j=0,positionMax=0 ,positionMin=0, some=0;
+
+max=nbr;
+min=nbr;
+
+do{
+	i++
+     nbr=parseInt(prompt("entrer un nbr "+ i));
+	 
+	 
+	 if(nbr > 0 ){
+	 some+=nbr
+	 
+	 
+	 if(nbr > max ){
+	    max = nbr;
+		positionMax = i;
+	
+	 }
+	 
+	 if(nbr<min){
+	   min = nbr;
+
+	 }
+	 }
+} while(nbr > 0)
+
+
+document.write("le max est : "+ max + " position est " + positionMax +"<br>")
+document.write("le min est : "+ min + " position est " + positionMin +"<br>")
+document.write("le som est : "+ some)
+
+
+
+</script>
+
+</html>

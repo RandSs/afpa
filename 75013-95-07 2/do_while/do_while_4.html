@@ -1,0 +1,40 @@
+<html>
+<script>
+var prix,compt=0,total=0,rendu=0,billet10=0,billet5=0;
+
+do{
+compt++;
+                prix=parseInt(window.prompt("Prix de l'article N° "+compt));  
+                total+=prix;
+}while(prix!=0);
+
+
+      rendu=parseInt(window.prompt(total+" € s'il vous plaît."));
+            rendu-=total;
+            document.write("Voici votre monnaie : "+rendu+" €<br>");
+			
+			do{
+			  if(rendu>=10){
+                    rendu-=10;
+                    billet10++;
+                }else{
+                    rendu-=5
+                    billet5++;
+                }
+			    
+			}
+			
+			  if(billet10>0){
+                document.write(billet10+" x 10€<br>");
+            }
+            if(billet5>0){
+                document.write(billet5+" x 5€<br>");
+            }
+            if(rendu>0){
+                document.write(rendu+" x 1€<br>");
+            }
+			while(rendu>=5)
+			
+</script>
+
+</html>

@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>For 11</title>
+		<script>
+            var x,big,small;
+            
+            x=parseInt(window.prompt("Entrez le nombre numéro 1"));
+            big=x;
+			small=x;
+    
+            for(i=2;i<=20;i++){
+                x=parseInt(window.prompt("Entrez le nombre numéro "+i));
+                if(big<x ){
+                    big=x;
+                  	 
+					}
+					if(small>x ){
+                    small=x;
+   	 
+					}
+					
+					
+                }
+				
+			
+			  document.write("le plus grand est: " +big +"<br>");
+			    document.write("le plus petit est: " + small + "<br>");
+          
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

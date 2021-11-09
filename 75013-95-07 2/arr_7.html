@@ -1,0 +1,34 @@
+<html>
+
+<script>
+  var array = [];
+  var length, index, pairs=0, impairs=0; 
+  length =  window.prompt("entrer le nombre des élément du tableau?")
+
+  
+
+  
+
+	 for(i=0; i<length ; i++){
+	 index =  window.prompt("entrer l'élément n " + (i+1) +"?")
+	 array[i] = index;
+	
+	 }
+	 
+	 for(i=0; i<length; i++)
+	 {
+	 if(array[i] %2 == 0){
+          pairs++          
+                    }else if (array[i] %2 !=0){
+					impairs++
+                       
+                    }
+	
+	 }
+	 
+	 
+	    document.write("N negatifs: " +pairs);
+		document.write("</br>N positif: " +impairs);
+</script>
+
+</html>

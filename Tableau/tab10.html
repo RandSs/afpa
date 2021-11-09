@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Tab 10</title>
+		<script>
+            var t=[],e,p;
+            var taille=parseInt(prompt("taille du tableau"))
+            for(i=0;i<taille;i++){
+                t[i]=prompt("Donnez le nombre "+(i+1));
+            }
+            e=prompt("saisir un élément");
+            p=prompt("saisir une position entre 1 et "+(taille))-1;
+            for(i=taille;i>p;i--){
+                t[i]=t[(i-1)];
+            }
+            t[p]=e;
+
+            for(i=0;i<=taille;i++){
+                document.write(t[i]+" ");
+            }
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

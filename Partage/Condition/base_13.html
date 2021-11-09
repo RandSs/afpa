@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>base 13</title>
+		<script>
+			var h,m;
+            h=parseInt(window.prompt("Entrer l'heure"));
+            m=parseInt(window.prompt("Entrer les minutes"));
+			m++;
+			if(m==60){
+				m="00";
+				h++;
+				if(h==24){
+				h="00";
+				}
+			}
+			document.write("Dans une minute, il sera "+h+"heure(s)"+m+" minute(s).");
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

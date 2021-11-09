@@ -1,0 +1,25 @@
+<html>
+<script>
+var age;
+var age_1;
+var doubl=0;
+var result;
+var total;
+
+
+age = parseInt(window.prompt("entrer votr age?"));
+var cent = (age - 1) * 100;
+ 
+ 
+ for (i=2; i<=age; i++){
+   result = 2 * i;
+   doubl = result + doubl;
+ }
+  total = cent + doubl;
+  document.write(cent+"<br>");
+   document.write(doubl+ "<br>");
+   
+  
+     document.write("le totale est: "+total  );
+</script>
+</html>

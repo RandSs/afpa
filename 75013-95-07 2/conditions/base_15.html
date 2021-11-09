@@ -1,0 +1,59 @@
+<html>
+
+<head>
+
+<title>Base 3</title>
+
+
+<script>
+
+var quan;
+
+
+
+quan = parseInt(window.prompt("entrer la quant"));
+
+if(quan <= 10  ){
+
+var totale = quan * 0.10 
+     document.write("le prix est: " +totale)
+}
+ else if(quan  > 10 && quan <= 30 ){
+ 
+ var quant_10 = 10 * 0.10;
+ var quant_20 = ((quan-10) * 0.09); 
+ 
+ totale =  quant_10 + quant_20 
+     document.write("le prix est: " + totale)
+}
+
+else if(quan > 20 ){
+
+ var quant_10 = 10 * 0.10;
+ var quant_20 = 20*0.09
+  var quantite = ( (quan-30) * 0.08) ;
+ 
+ totale =  quant_10 + quant_20 + quantite
+     document.write("le prix est: " + totale)
+	 
+	 
+	 }
+
+
+
+</script>
+</head>
+
+<body>
+<header>
+
+</header>
+
+<main>
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
