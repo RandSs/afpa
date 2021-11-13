@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script>
+
+        function change(k)
+{
+        
+           var big =    document.getElementById("big");
+          
+            big.setAttribute("src", k);  
+        } 
+
+        function change_voiture(){
+
+        var voiture = ["img/burgati.jpeg" ,"img/horizon.jpeg", "img/mercedes.jpeg", "img/tuatara.jpeg","img/audi.jpeg"  ];
+
+for(i=0; i<=voiture; i++){
+    document.write("hello");
+    document.getElementById("voiture").innerHTML = "<tbody><tr><td><img src=" + voiture[i] +"></td></tr></tbody>";
+    
+    document.write("<input class='button' type='button' onclick='deuxCent("+ i +")' value='"+ i +"'>");  
+
+}
+
+        }
+        //change_voiture();
+        </script>
+    <title>image</title>
+</head>
+<body>
+
+
+    <table>
+        <tbody>
+            <tr>
+                <td  colspan="8"><img  id="big" src="img/audi.jpeg" alt="" width="600px"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="button"    onclick="change('img/burgati.jpeg')"; ><img src="img/burgati.jpeg" alt="" width="150px"> </button></td>
+                <td colspan="2"><button type="button" onclick="change('img/horizon.jpeg')" ><img src="img/horizon.jpeg" alt="" width="150px"></button></td>
+                <td colspan="2"> <button type="button"  onclick="change('img/mercedes.jpeg')"><img src="img/mercedes.jpeg" alt="" width="150px"></button></td>
+                <td colspan="2"><button type="button"   onclick="change('img/tuatara.jpeg')"><img src="img/tuatara.jpeg" alt="" width="150px"></button></td>
+            </tr>
+        </tbody>
+    </table>
+    
+
+
+
+    <div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Marque</th>
+                    <th>Nom de voiture</th>
+                    <th>Power</th>
+                </tr>
+               
+            </thead>
+
+            <tbody id="voiture">
+                <tr>
+                    
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <input type="button" value=""  onclick="change_voiture()">
+    </div>
+</body>
+</html>

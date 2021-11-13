@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+
+
+
+
+function titre(){
+    var titre = document.getElementById("titre").value;
+   var size =   document.getElementById("size").value;
+document.getElementById("affiche").innerHTML = "<" + size + ">Bonjour " + titre + "</" + size + ">";
+    
+
+}
+
+
+    </script>
+    <title>les titre</title>
+</head>
+<body>
+    
+
+    <input type="text"    name="" id="titre">
+
+    <select name=""  id="size" onchange="titre()">
+        <option value='h1'>h1</option>
+        <option value="h2">h2</option>
+        <option value="h3">h3</option>
+        <option value="h4">h4</option>
+        <option value="h5">h5</option>
+        <option value="h6">h6</option>
+    </select><br>
+
+    
+    <input type="button"   value="titre" >
+   
+
+<div id="affiche">
+
+
+
+
+</div>
+</body>
+</html>

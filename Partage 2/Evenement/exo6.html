@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Evènement</title>
+		<script>
+            function ok(){
+                var h = document.getElementById("h").value;
+                var prenom = document.getElementById("prenom").value;
+                document.getElementById("aff").innerHTML="<"+h+">Bonjour "+prenom+"</"+h+">";
+            }
+            
+
+        </script>
+	</head>
+	<body>
+        <!-- onchange="function()" change quand l'utilisateur change l'option choisi -->
+        <!-- onkeyup="function()" ce déclanche quand l'utilisateur écrit -->
+        <input type="text" onkeyup="ok()" id="prenom">
+        <select id="h" onchange="ok()" >
+            <option value="h1">H1</option>
+            <option value="h2">H2</option>
+            <option value="h3">H3</option>
+            <option value="h4">H4</option>
+            <option value="h5">H5</option>
+            <option value="h6">H6</option>
+        </select>
+        <div id="aff"></div>
+	</body>
+</html>

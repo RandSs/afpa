@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    .btn{
+        border: solid 4px;
+    }
+     .red{
+
+        border: solid 4px red;
+        width: 100px;
+     }
+     .back{
+
+        background-color: black;
+     }
+
+     .text{
+         color: red;
+     }
+
+</style>
+    <script>
+
+        function classNames(color){
+
+               document.getElementById("show").classList.toggle(color)
+            
+
+               document.getElementById(color).classList.toggle("btn") 
+
+            
+        }
+
+    </script>
+    <title>Class</title>
+</head>
+<body>
+
+
+    <input type="button" value="s1" id="btn1"  onclick="classNames('s1')" >
+    <input type="button" value="s2" id="btn2"  onclick="classNames('s2')">
+    <input type="button" value="s3" id="btn3"  onclick="classNames('s3')">
+
+
+    <div id="show"   >
+hello
+    </div>
+    
+</body>
+</html>

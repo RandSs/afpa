@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number</title>
+<style>
+    #show{
+        width: 100%;
+    }
+    .button{
+        width: 10%;
+    }
+</style>
+    <script>
+        
+
+       document.write("<input id='show'  type='text' ><br></br>")
+
+        for(i=1; i<=200; i++){
+
+            document.write("<input class='button' type='button' onclick='deuxCent("+ i +")' value='"+ i +"'>");   
+
+        }
+
+
+
+        function deuxCent(a){
+
+document.getElementById("show").value += " "+ a
+
+    }
+
+
+    function bonjour()
+        {
+               var prenom = document.getElementById("prenom").value;
+               document.getElementById("titre").innerHTML = "Bonjour "+ prenom;
+            
+        }
+            </script>
+
+
+</head>
+<body >
+
+    <input type="text" name="prenom" id="prenom"><br>
+    <input type="button" onclick=bonjour() value="ok"><br>
+
+    <h1 id="titre"></h1>
+        
+  
+</body>
+</html>

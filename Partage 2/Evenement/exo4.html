@@ -1,0 +1,17 @@
+<html>
+	<head>
+		<title>Evènement</title>
+		<script>
+             document.write('<form><input type="text" style="width:100%" id="message"><br>')
+            for(i=1;i<=200;i++){
+                document.write('<input type="button" onclick="ok('+i+')" style="width:10%" value='+i+'>')
+            }
+            document.write('<input type="reset" style="width:100%" value="C"></form>')
+            function ok(a){
+                    document.getElementById("message").value+=a+" ";
+            }
+        </script>
+	</head>
+	<body>
+	</body>
+</html>

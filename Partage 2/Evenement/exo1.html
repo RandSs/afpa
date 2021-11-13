@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Evènement</title>
+		<script>
+            function ok(){
+                var a=parseInt(document.getElementById("a").value);
+                var b=parseInt(document.getElementById("b").value);
+                var s=a+b;
+                alert(a+" + "+b+" = "+s);
+            }
+		</script>
+	</head>
+	<body>
+        <form action="">
+            <input type="text" id="a"><br>
+            +<br>
+            <input type="text" id="b"><br>
+            <input onclick="ok()" type="button" value="="><br>
+        </form>
+	</body>
+</html>

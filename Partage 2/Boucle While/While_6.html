@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>While 6</title>
+		<script>
+            var nbr, test;
+            nbr=parseInt(window.prompt("Entrez un nombre"));
+            while(test!=nbr){
+                test=window.prompt("Devinez le nombre, STOP pour abandonner");
+                if(test>nbr){
+                    alert("C'est moins");
+                }else if(test<nbr){
+                    alert("C'est plus");
+                }else if(test=="STOP"){
+                    document.write("Vous avez abandonner");
+                    test=nbr;    
+                }else if(test==nbr){
+                    document.write("C'est gagnez");
+                }
+            }
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

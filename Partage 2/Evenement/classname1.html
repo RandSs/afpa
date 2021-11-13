@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Style</title>
+    <script>
+      function s1() {
+		//document.getElementById("name").setAttribute("class","s1");
+        document.getElementById("name").className="s1";
+      }
+      function s2() {
+        document.getElementById("name").className="s2";
+      }
+      function ok() {
+        var n=document.getElementById("name").className;
+        alert(n);
+      }
+    </script>
+    <style>
+      .s1 {
+        color: blue;
+      }
+      .s2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button" onclick="s1()">S1</button>
+    <button type="button" onclick="s2()">S2</button>
+    <button type="button" onclick="ok()">OK</button>
+    <h1 id="name" >Zak</h1>
+  </body>
+</html>

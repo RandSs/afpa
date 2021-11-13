@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Evènement</title>
+		<script>
+            function ok(){
+                var a=parseInt(document.getElementById("a").value);
+                var b=parseInt(document.getElementById("b").value);
+                var r;
+                var op = document.getElementById("op").value;
+                if(op=="+"){
+                    r=a+b;
+                }else if(op=="-"){
+                    r=a-b;
+                }else if(op=="x"){
+                    r=a*b;
+                }
+                document.getElementById("r").value=r;
+            }
+		</script>
+	</head>
+	<body>
+        <form action="">
+            <input type="text" placeholder="Nombre 1" id="a"><br>
+            <select id="op">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="x">x</option>
+            </select>
+            <br>
+            <input type="text" placeholder="Nombre 2" id="b"><br>
+            <input onclick="ok()" type="button" value="="><br>
+            <input type="text" id="r" >
+        </form>
+	</body>
+</html>

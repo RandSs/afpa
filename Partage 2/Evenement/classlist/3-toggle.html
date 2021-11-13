@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		.s1 {
+		  width: 300px;
+		  height: 50px;
+		  background-color: coral;
+		  font-size: 25px;
+		}
+
+		.s2 {
+		  color:red;
+		}
+		</style>
+		<script>
+		function myFunction() {
+		  document.getElementById("myDIV").classList.toggle("s2");
+		  
+		  
+		  if(document.getElementById("myDIV").classList.contains("s2")==true){
+			document.getElementById("myDIV").classList.remove("s2");
+		  }else{
+			document.getElementById("myDIV").classList.add("s2");
+		  }
+		  
+		  
+		}
+		</script>
+	</head>
+	<body>
+		<button onclick="myFunction()">OK</button>
+		<div id="myDIV" class="s1">
+		I am a DIV element
+		</div>
+	</body>
+</html>

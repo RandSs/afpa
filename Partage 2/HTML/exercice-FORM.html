@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Les formulaires</title>
+  </head>
+  <body>
+    <center>
+      <img src="register.jfif" alt="logo">
+      <form>
+        <table>
+          <tr>
+            <td>
+				<b>Civilité</b>
+			</td>
+            <td>
+				<input type="radio" name="civility">Madame
+				<input type="radio" name="civility" checked>Monsieur
+			</td>
+          </tr>
+          <tr>
+            <td>
+				<b>Nom/Prénom</b>
+			</td>
+            <td>
+				<input type="text" size="60">
+			</td>
+          </tr>
+          <tr>
+            <td>
+				<b>Adresse</b>
+			</td>
+            <td>
+				<textarea cols="59" rows="3" placeholder="Rue No Boîte postale"></textarea>
+			</td>
+          </tr>
+          <tr>
+            <td>
+				<b>No postal /<br>Localité</b>
+			</td>
+            <td>
+				<input size="27" type="text">&nbsp;<input  size="27" type ="text">
+			</td>
+          </tr>
+          <tr>
+            <td>
+				<b>Pays</b>
+			</td>
+            <td>
+				<select>
+					<option>France</option>
+					<option>Maroc</option>
+				</select>
+			</td>
+          </tr>
+          <tr>
+            <td>
+				<b>Plateforme(s)</b>
+			</td>
+            <td>
+				<input type="checkbox" checked>Windows
+				<input type="checkbox" checked>Macintosh
+				<input type="checkbox">Linux
+			</td>
+          </tr>
+          <tr>
+            <td><b>Application(s)</b></td>
+            <td>
+				<select>
+					<option>Internet</option>
+					<option>Jeux Video</option>
+				</select>
+			</td>
+          </tr>
+        </table>
+        <input type="submit" value="Soumettre.">
+        <input type="reset" value="E ffacer">
+      </form>
+    </center>
+  </body>
+</html>

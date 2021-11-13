@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="FR-fr">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Style</title>
+    <style>
+      .s1 {
+        color :blue;
+        border: 3px solid red;
+      }
+      .s2 {
+        background-color: black;
+      }
+      .s3 {
+        border-radius: 20px;
+        text-align: center;
+      }
+      .on {
+        border: 3px solid black;"
+      }
+    </style>
+    <script>
+      function f_s(n) {
+        document.getElementById("name").classList.toggle(n);
+        document.getElementById(n).classList.toggle("on");
+      }
+    </script>
+  </head>
+  <body>
+    <button id="s1" onclick="f_s('s1')">S1</button>
+    <button id="s2" onclick="f_s('s2')">S2</button>
+    <button id="s3" onclick="f_s('s3')">S3</button>
+    <h1 id="name">Zack</h1>
+  </body>
+</html> 

@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Evènement</title>
+		<script>
+            function ok(){
+                var a=parseInt(document.getElementById("a").value);
+                var b=parseInt(document.getElementById("b").value);
+                var m = document.getElementById("memoire").innerHTML;
+                var op = document.getElementById("op").value;
+                var r = eval(a+op+b);
+                document.getElementById("r").value=r;
+                document.getElementById("memoire").innerHTML=a+" "+op+" "+b+" = "+r+"<br>"+m; 
+            }
+		</script>
+	</head>
+	<body>
+        <form action="">
+            <input type="text" placeholder="Nombre 1" id="a"><br>
+            <select id="op">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">x</option>
+            </select>
+            <br>
+            <input type="text" placeholder="Nombre 2" id="b"><br>
+            <input onclick="ok()" type="button" value="="><br>
+            <input type="text" id="r" >
+        </form><hr>
+        <div id="memoire"></div>
+	</body>
+</html>

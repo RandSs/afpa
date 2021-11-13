@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>test</title>
+		<style>
+			.min td img{
+				height:100px;
+			}
+		</style>
+		<script>
+			function ok(url){
+				document.getElementById("big").setAttribute("src", url);
+			}
+		</script>
+	</head>
+	<body>
+		
+		<table>
+			<tr>
+				<td colspan="4"><img id="big" height="500px;" src="1.jpg"></td>
+			</tr>
+			<tr class="min">
+				<td><img onClick="ok('1.jpg')" src="1.jpg"></td>
+				<td><img onClick="ok('2.jpg')" src="2.jpg"></td>
+				<td><img onClick="ok('3.jpg')" src="3.jpg"></td>
+				<td><img onClick="ok('4.jpg')" src="4.jpg"></td>
+				
+			</tr>
+		</table>
+	</body>
+</html>
