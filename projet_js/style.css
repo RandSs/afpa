@@ -1,0 +1,45 @@
+.d-flex{
+    width: 60%;
+    margin-top: 20px;
+}
+main{
+    margin-top: 100px;
+}
+.nos_cat{
+    margin: 20px;
+    color: rgba(228, 175, 3, 0.74);
+}
+.sou_cat{
+    margin: 10px;
+    border: solid 1px rgb(223, 204, 119);
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+ 
+
+}
+
+.col, .col-xl{
+
+margin: 5px;
+    border: solid 1px rgb(224, 193, 52);
+    padding: 10px; 
+    
+}
+.homme{
+    margin: 5px;
+    width: 350px;
+}
+#vetements{
+   
+ display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+
+.button{
+    background-color: white;
+    border: none;
+    
+}
